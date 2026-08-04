@@ -1,4 +1,4 @@
-import type { UserData } from '../types/login.type.ts';
+import type { UserData } from '../types/users.type.ts';
 import { Router, type Request, type Response } from 'express';
 
 export let usersDb: UserData[] = [
