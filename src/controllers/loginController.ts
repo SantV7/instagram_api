@@ -1,6 +1,6 @@
 import express, {  type Request, type Response } from 'express';
 import type { UserData } from '../types/login.type.ts';
-import { usersDb } from '../../server.ts';
+import { usersDb } from '../routes/users.ts';
 
 
 
