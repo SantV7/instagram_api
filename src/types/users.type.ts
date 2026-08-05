@@ -1,4 +1,5 @@
 export interface UserData {
+    id: number
     username: string;
     password: string;
     email?: string; 
@@ -10,6 +11,7 @@ export interface UserLogin {
 }
 
 export interface UserRegisterReq {
+    id: number;
     username: string; 
     email: string; 
     password: string; 

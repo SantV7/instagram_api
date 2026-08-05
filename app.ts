@@ -5,9 +5,9 @@ import type { UserData } from './src/types/users.type.ts';
 const app: Express = express();
 
 export let usersDb: UserData[] = [
-    {username: 'Aivy', password: '96321'},
-    {username: 'Vy', password: '13579'},
-    {username: 'Vyny', password: '12345'},
+    {id: 1, username: 'Aivy', password: '96321'},
+    {id: 2, username: 'Vy', password: '13579', email: 'exemple@gmail.com'},
+    {id: 3, username: 'Vyny', password: '12345'},
 ];
 
 app.use(express.json());
