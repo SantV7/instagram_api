@@ -1,6 +1,7 @@
 import express, { type Express, type Request, type Response } from 'express';
-import { login } from './src/routes/login.ts';
+import { loginRoute } from './src/routes/login.ts';
 import type { UserData } from './src/types/users.type.ts';
+import { registerRoute } from './src/routes/userRegister.ts';
 
 const app: Express = express();
 
@@ -11,8 +12,8 @@ export let usersDb: UserData[] = [
 ];
 
 app.use(express.json());
-
-app.use(login);
+app.use(loginRoute)
+app.use(registerRoute);
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Instagram trainning!');

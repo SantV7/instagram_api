@@ -2,6 +2,6 @@ import { Router } from 'express';
 import { authLogin } from '../middlewares/login/authLogin.ts';
 import { userLogin } from '../controllers/loginController.ts';
 
-export const login = Router();
+export const loginRoute = Router();
 
-login.post('/users/login', authLogin , userLogin);
+loginRoute.post('/users/sign-in', authLogin, userLogin);
