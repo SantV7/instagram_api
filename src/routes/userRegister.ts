@@ -1,5 +1,7 @@
-import express, { Router, type Request, type Response } from 'express';
+import { Router } from 'express';
+import { authUserRegister } from '../middlewares/userRegister/authRegister.ts';
+import { userRegister } from '../controllers/registerController.ts';
 
-const userRegister = Router();
+const registerRoute = Router();
 
-userRegister.post('/users/create', )
+registerRoute.post('/users/create', authUserRegister, userRegister);
