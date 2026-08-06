@@ -17,3 +17,17 @@ export interface UserRegisterReq {
     password: string; 
     confirm_password: string;  
 }
+
+export interface UserEdit {
+    id:number;
+    username: string; 
+    email: string; 
+    password: string; 
+}
+
+export interface UpdateUser {
+    id:number;
+    username: string; 
+    email: string; 
+    password: string; 
+}
