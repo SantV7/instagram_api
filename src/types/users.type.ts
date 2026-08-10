@@ -31,3 +31,7 @@ export interface UpdateUser {
     email: string; 
     password: string; 
 }
+
+export interface DeleteUser {
+    id: number;
+}

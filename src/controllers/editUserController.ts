@@ -1,4 +1,4 @@
-import {  type Request, type Response } from 'express';
+import { type Request, type Response } from 'express';
 import type { UserEdit, UpdateUser } from '../types/users.type.ts';
 import { usersDb } from '../../app.ts';
 
