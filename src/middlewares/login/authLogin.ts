@@ -1,5 +1,6 @@
-import { type Request, type Response, type NextFunction } from 'express'
-import type { UserLogin } from '../../types/users.type.ts'
+import { type Request, type Response, type NextFunction } from 'express';
+
+import type { UserLogin } from '../../types/users.type.ts';
 
 
 export function authLogin(req: Request, res: Response, next: NextFunction) {

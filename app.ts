@@ -14,12 +14,12 @@ export let usersDb: UserData[] = [
 
 app.use(express.json());
 
-app.use(loginRoute)
+app.use(loginRoute);
 app.use(registerRoute);
 app.use(editUserRoute)
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Instagram trainning!');
+   res.send('Instagram API trainning!');
 });
 
 export default app;
